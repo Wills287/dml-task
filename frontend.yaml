@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: k8s.gcr.io/echoserver:1.4
+          image: wills287/frontend-sample:0.0.1
 ---
 apiVersion: v1
 kind: Service
@@ -31,4 +31,4 @@ spec:
   ports:
     - name: http
       port: 8080
-      targetPort: 8080
+      targetPort: 80
